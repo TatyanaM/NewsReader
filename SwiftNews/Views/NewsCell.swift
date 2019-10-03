@@ -1,5 +1,5 @@
 //
-//  ArticleCell.swift
+//  NewsCell.swift
 //  SwiftNews
 //
 //  Created by Tatiana Mudryak on 03/09/2019.
@@ -7,18 +7,16 @@
 //
 
 import UIKit
-import AlamofireImage
 
 /// Custom table view cell for displaying an article data
-/// Uses Alamofire for downloading an image data
-class ArticleCell: UITableViewCell {
+class NewsCell: UITableViewCell {
     
     @IBOutlet private(set) weak var titleLabel: UILabel!
     @IBOutlet private(set) weak var thumbnailImageView: UIImageView!
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        thumbnailImageView.af_cancelImageRequest()
+       // thumbnailImageView.af_cancelImageRequest()
         thumbnailImageView.image = nil
     }
 }

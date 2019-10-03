@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KMv-wt-djN">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KMv-wt-djN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SwiftArticles-->
+        <!--News-->
         <scene sceneID="6ri-X3-zUO">
             <objects>
-                <viewController id="XYA-px-cAr" customClass="ArticlesListViewController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XYA-px-cAr" userLabel="News" customClass="NewsListViewController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbA-jJ-RUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +40,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ck7-MU-80w"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SwiftArticles" id="Ck9-ih-vZO">
+                    <navigationItem key="navigationItem" title="All news" id="Ck9-ih-vZO">
                         <barButtonItem key="backBarButtonItem" title=" " id="xNm-hF-09V"/>
                     </navigationItem>
                     <connections>
@@ -53,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="176.78571428571428"/>
         </scene>
-        <!--Article View Controller-->
+        <!--News View Controller-->
         <scene sceneID="wMN-9M-YNf">
             <objects>
-                <viewController storyboardIdentifier="ArticleViewController" id="eOw-rf-QrM" customClass="ArticleViewController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsViewController" id="eOw-rf-QrM" customClass="NewsViewController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NWC-MR-yPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
