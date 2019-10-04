@@ -20,6 +20,7 @@
 		B00D26F62345E6B9003490EC /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D26F52345E6B9003490EC /* NewsRouter.swift */; };
 		B00D270223462B33003490EC /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D270123462B33003490EC /* NetworkRequestService.swift */; };
 		B0C29F86232128AC0027804F /* URL+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C29F85232128AC0027804F /* URL+Validation.swift */; };
+		B0C3E6A1234780340071A9FA /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C3E6A0234780340071A9FA /* NewsSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B00D26F52345E6B9003490EC /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
 		B00D270123462B33003490EC /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
 		B0C29F85232128AC0027804F /* URL+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Validation.swift"; sourceTree = "<group>"; };
+		B0C3E6A0234780340071A9FA /* NewsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				09336AA0231EEB8400F55D94 /* NewsItem.swift */,
+				B0C3E6A0234780340071A9FA /* NewsSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				B00D270223462B33003490EC /* NetworkRequestService.swift in Sources */,
 				B0C29F86232128AC0027804F /* URL+Validation.swift in Sources */,
 				09336A81231EEAF400F55D94 /* AppDelegate.swift in Sources */,
+				B0C3E6A1234780340071A9FA /* NewsSource.swift in Sources */,
 				09336AA1231EEB8400F55D94 /* NewsItem.swift in Sources */,
 				B00D26F62345E6B9003490EC /* NewsRouter.swift in Sources */,
 			);

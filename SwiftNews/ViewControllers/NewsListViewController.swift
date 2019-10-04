@@ -79,6 +79,8 @@ extension NewsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: newsCellReuseIdentifier, for: indexPath) as! NewsCell
         let newsItem = news[indexPath.row]
+        cell.sourceNameLabel.text = newsItem.source?.name
+        cell.dateLabel.text = newsItem.publishedAt
         cell.titleLabel.text = newsItem.title
         
 //        if let url = news.thumbnailURL, url.isValidURL {

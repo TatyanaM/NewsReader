@@ -11,7 +11,14 @@ import UIKit
 /// Custom table view cell for displaying an article data
 class NewsCell: UITableViewCell {
     
-    @IBOutlet private(set) weak var titleLabel: UILabel!
+    @IBOutlet private(set) weak var sourceNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel! {
+        didSet {
+            
+        }
+    }
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet private(set) weak var thumbnailImageView: UIImageView!
 
     override func prepareForReuse() {

@@ -24,11 +24,11 @@ struct FetchArticleResponse: Codable {
 
 /// News Item object
 public class NewsItem: Codable {
-    public var name: String?
+    public var source: NewsSource?
     public var author: String?
     public var title: String?
     public var content: String?
     public var url: URL?
     public var urlToImage: URL?
-    public var publichedAt: String?
+    public var publishedAt: String?
 }
