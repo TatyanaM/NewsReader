@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 /// View controller for displaying a list of news
 class NewsListViewController: UIViewController {
@@ -83,16 +84,9 @@ extension NewsListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.dateLabel.text = newsItem.publishedAt
         cell.titleLabel.text = newsItem.title
         
-//        if let url = news.thumbnailURL, url.isValidURL {
-//            cell.thumbnailImageView.af_setImage(withURL: url) { [weak self] (response) in
-//                if response.response != nil {
-//                    DispatchQueue.main.async {
-//                        self?.tableView.beginUpdates()
-//                        self?.tableView.endUpdates()
-//                    }
-//                }
-//            }
-//        }
+        if let url = newsItem.urlToImage {
+            cell.thumbnailImageView.sd_setImage(with: url) 
+        }
         return cell
     }
 
