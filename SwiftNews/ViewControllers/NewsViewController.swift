@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 /// View controller for displaying a content of an article
 class NewsViewController: UIViewController {
@@ -15,6 +16,7 @@ class NewsViewController: UIViewController {
     
     @IBOutlet private(set) weak var articleImageView: UIImageView!
     @IBOutlet private(set) weak var articleTextView: UITextView!
+    @IBOutlet weak var arcticleTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +31,13 @@ class NewsViewController: UIViewController {
 
         if let url = newsItem.urlToImage, url.isValidURL {
             articleImageView.isHidden = false
-        //    articleImageView.af_setImage(withURL: url)
+            articleImageView.sd_setImage(with: url)
         }
         else {
             articleImageView.isHidden = true
         }
 
+        arcticleTitleLabel.text = newsItem.title
         articleTextView.text = newsItem.content
     }
 
